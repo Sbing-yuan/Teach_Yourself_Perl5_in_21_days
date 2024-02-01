@@ -1,0 +1,4 @@
+#!/usr/local/bin/perl
+$inputline = <STDIN>;
+# print my line! print($inputline);
+print($inputline);

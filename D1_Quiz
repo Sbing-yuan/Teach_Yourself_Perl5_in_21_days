@@ -1,0 +1,23 @@
+1. What do Perl's fans appreciate about Perl?
+	simple and powerful
+2. What does the Perl interpreter do?
+	execute perl programs
+3. Define the following terms:
+	a     statement
+		collection of tokens
+	b     token
+		smallest element
+	c     argument
+		inputs of function
+	d     error recovery
+		interpreter detect error in program 
+	e     standard input file
+		character enter @ keyboard
+4. What is a comment, and where can it appear?
+	#...
+5. Where is Perl usually located on a UNIX machine?
+	/usr/local/bin/perl
+6. What is a header comment, and where does it appear in a program?
+	tell system this is a Perl Program
+7. What is a library function?
+	predefined for specific task
