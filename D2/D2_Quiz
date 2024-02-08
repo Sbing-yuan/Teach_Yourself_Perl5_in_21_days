@@ -1,0 +1,18 @@
+Define the following terms:
+a.     expression -> collection of operations(operators and operands)
+b.     operand -> values operated by operators
+c.     conditional statement -> statements executed only when certain conditions are true
+d.     statement block -> any number of legal Perl statements
+e.     infinite loop -> loops that never stop
+When does a while statement stop looping? -> while condition not true
+When does an until statement stop looping? -> till condition is true
+What does the == operator do? -> equality operator, evaluate 2-side expressions first then compare if thet are equal
+What is the result when the following expression is evaluated?
+14 + 6 * 3 - 10 / 2 -> 27
+Which of the following are legal scalar variable names?
+a.     $hello o
+b.     $_test o
+c.     $now_is_the_time_to_come_to_the_aid_of_the_party o
+d.     $fries&gravy x
+e.     $96tears x
+f.     $tea_for_2 o

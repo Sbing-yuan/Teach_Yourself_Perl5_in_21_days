@@ -1,0 +1,6 @@
+#!/usr/local/bin/perl
+$val = 10;
+until ($val == 0) {
+	print($val,"\n");
+	$val -= 1;
+}

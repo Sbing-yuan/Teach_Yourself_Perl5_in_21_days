@@ -1,0 +1,7 @@
+#!/usr/local/bin/perl
+
+print ("Enter the value to be multiplied\n");
+$in_val= <STDIN>;
+chop ($in_val); #chop delete the right end of string
+$out_val= $in_val * 2;
+print ("Output value: ", $out_val, "\n");

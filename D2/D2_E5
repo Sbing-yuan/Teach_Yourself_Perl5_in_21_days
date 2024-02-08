@@ -1,0 +1,14 @@
+#!/usr/local/bin/perl
+#$value = <STDIN>;
+#if ($value = 17) {
+#print ("You typed the number 17.\n");
+#else {
+#print ("You did not type the number 17.\n");
+
+$value = <STDIN>;
+if ($value == 17) {
+print ("You typed the number 17.\n");
+}
+else {
+print ("You did not type the number 17.\n");
+}
