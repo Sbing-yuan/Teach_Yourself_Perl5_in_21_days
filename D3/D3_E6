@@ -1,0 +1,3 @@
+#!/usr/local/bin/perl
+$result = "26" + "0xce" + "1";
+print($result);

@@ -1,0 +1,7 @@
+#!/usr/local/bin/perl
+$num1 = 6.02e+23;
+$num2 = 11.4;
+$num3 = 5.171e+22;
+$num4 = -2.5;
+$result = $num1 + $num2 - $num3 + $num4;
+print($result);

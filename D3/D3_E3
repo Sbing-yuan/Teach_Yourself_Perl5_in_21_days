@@ -1,0 +1,8 @@
+#!/usr/local/bin/perl
+
+$var = 0;
+while ($var != 47) {
+	print("Input a num: ");
+	$var = <STDIN>;
+}
+print("Correct!\a");

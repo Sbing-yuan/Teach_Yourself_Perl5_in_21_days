@@ -1,0 +1,5 @@
+#!/usr/local/bin/perl
+#$inputline = <STDIN>;
+#print ('here is the value of \$inputline\', ": $inputline");
+$inputline = <STDIN>;
+print ('here is the value of $inputline', ": $inputline");
