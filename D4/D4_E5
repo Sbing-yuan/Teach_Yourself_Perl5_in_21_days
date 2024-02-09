@@ -1,0 +1,8 @@
+#! /usr/local/bin/perl
+#Why might the following statement not assign the value 5.1 to $result?
+#$result = 5.1 + 100005.2 - 100005.2;
+
+$result = 5.1 + 100005.2 - 100005.2;
+print("result is $result\n"); # round-off Error
+$result = 100005.2 - 100005.2 + 5.1;
+print("result is $result\n");
