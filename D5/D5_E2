@@ -1,0 +1,22 @@
+#!/usr/local/bin/perl
+
+$grand_total= 0;
+@eachline_total;
+
+$line = <STDIN>;
+$var = 0;
+while ($line ne "") {
+        chop ($line);
+        @array = split(/ /, $line);
+	$this_line_total = @array;
+	$grand_total += $this_line_total;
+	$eachline_total[$var] = $this_line_total;
+	$var += 1;
+        $line = <STDIN>;
+}
+print ("Grand Total: $grand_total\n");
+$var = 0;
+while ($var < @eachline_total) {
+	print("Line", $var+1, " total: $eachline_total[$var]\n");
+	$var += 1;
+}
