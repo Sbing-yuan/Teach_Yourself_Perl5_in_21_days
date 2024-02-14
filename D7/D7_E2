@@ -1,0 +1,44 @@
+#!/usr/local/bin/perl
+
+print("Text input:\n");
+@input = <STDIN>;
+
+while($var < @input) {
+	$text = $input[$var];
+	@_0_matches = $text =~ /0/g;
+	@_1_matches = $text =~ /1/g;
+	@_2_matches = $text =~ /2/g;
+	@_3_matches = $text =~ /3/g;
+	@_4_matches = $text =~ /4/g;
+	@_5_matches = $text =~ /5/g;
+	@_6_matches = $text =~ /6/g;
+	@_7_matches = $text =~ /7/g;
+	@_8_matches = $text =~ /8/g;
+	@_9_matches = $text =~ /9/g;
+	$_0_sum += @_0_matches;
+	$_1_sum += @_1_matches;
+	$_2_sum += @_2_matches;
+	$_3_sum += @_3_matches;
+	$_4_sum += @_4_matches;
+	$_5_sum += @_5_matches;
+	$_6_sum += @_6_matches;
+	$_7_sum += @_7_matches;
+	$_8_sum += @_8_matches;
+	$_9_sum += @_9_matches;
+	$var++;
+}
+
+$total = $_0_sum + $_1_sum + $_2_sum + $_3_sum + $_4_sum +
+ 		 $_5_sum + $_6_sum + $_7_sum + $_8_sum + $_9_sum ;
+
+print("Total num of 0: $_0_sum\n");
+print("Total num of 1: $_1_sum\n");
+print("Total num of 2: $_2_sum\n");
+print("Total num of 3: $_3_sum\n");
+print("Total num of 4: $_4_sum\n");
+print("Total num of 5: $_5_sum\n");
+print("Total num of 6: $_6_sum\n");
+print("Total num of 7: $_7_sum\n");
+print("Total num of 8: $_8_sum\n");
+print("Total num of 9: $_9_sum\n");
+print("Total num: $total\n");

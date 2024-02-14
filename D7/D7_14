@@ -1,0 +1,5 @@
+#!/usr/local/bin/perl
+
+$string = <STDIN>;
+$string =~ tr/0-9//cd;
+print ("$string\n");

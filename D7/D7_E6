@@ -1,0 +1,14 @@
+#What is wrong with the following program?
+#!/usr/local/bin/perl
+
+#while ($line = <STDIN>) {
+#if ($line =~ /[\d]*/) {
+#print ("This line contains the digits '$&'\n");
+#}
+#}
+
+while ($line = <STDIN>) {
+if ($line =~ /[\d]+/) {
+print ("This line contains the digits '$&'\n");
+}
+}

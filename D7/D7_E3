@@ -1,0 +1,6 @@
+#!/usr/local/bin/perl
+
+print("Inputline: \n");
+$inputline = <STDIN>;
+$inputline =~ s/(\w+)(\s+)(\w+)(\s+)(\w+)/$5$4$3$2$1/;
+print("Outputline: $inputline\n");

@@ -1,0 +1,11 @@
+#!/usr/local/bin/perl
+
+print("Text input:\n");
+@input = <STDIN>;
+
+while($var < @input) {
+	$text = $input[$var];
+	$text =~ tr/aeiou/AEIOU/;
+	print($text);
+	$var++;
+}

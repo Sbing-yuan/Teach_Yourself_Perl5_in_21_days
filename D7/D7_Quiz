@@ -1,0 +1,31 @@
+What do the following patterns match?
+a.   /a|bc*/ -> a, b, bc, bcc, ...
+b.   /[\d]{1,3}/ -> 1 to 3 digits
+c.   /\bc[aou]t\b/ -> cat, cot, cut
+d.   /(xy+z)\.\1/ -> xyz.xyz, xyyz.xyyz, ...
+e.   /^$/ -> empty line
+Write patterns that match the following:
+a.   Five or more lowercase letters (a-z). -> /[a-z]{5,}/
+b.   Either the number 1 or the string one. -> /1|one/
+c.   string of digits optionally containing a decimal point. -> /\d+\.\d+/
+d.   Any letter, followed by any vowel, followed by the same letter again. -> /([a-zA-Z])[aeiou]\1/
+e.   One or more + characters. -> /\++/
+Suppose the variable $var has the value abc123. Indicate whether the following conditional expressions return true or false.
+a.  $var =~ /./ -> true
+b.  $var =~ /[A-Z]*/ -> True, matched empty string""
+c.  $var =~ /\w{4-6}/ -> true
+d.  $var =~ /(\d)2(\1)/ -> false
+e.  $var =~ /abc$/ -> false
+f.  $var =~ /1234?/ -> true
+Suppose the variable $var has the value abc123abc. What is the value of $var after the following substitutions?
+a.   $var =~ s/abc/def/; -> def123abc
+b.   $var =~ s/[a-z]+/X/g; -> X123X
+c.   $var =~ s/B/W/i; -> aWc123abc
+d.   $var =~ s/(.)\d.*\1/d/; -> abd
+e.   $var =~ s/(\d+)/$1*2/e; -> abc246abc
+Suppose the variable $var has the value abc123abc. What is the value of $var after the following translations?
+a.   $var =~ tr/a-z/A-Z/; -> ABC123ABC
+b.   $var =~ tr/123/456/; -> abc456abc
+c.   $var =~ tr/231/564/; -> abc456abc
+d.   $var =~ tr/123/ /s; -> abc abc
+e.   $var =~ tr/123//cd; -> 123
