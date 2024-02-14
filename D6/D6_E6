@@ -1,0 +1,7 @@
+#What is wrong with the following program?
+#!/usr/local/bin/perl
+
+#open (OUTFILE, "outfile");
+#print OUTFILE ("This is my message\n");
+open (OUTFILE, ">outfile");
+print OUTFILE ("This is my message\n");

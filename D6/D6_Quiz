@@ -1,0 +1,19 @@
+Define the following terms:
+a.    file variable -> for file operating, read, write by accessing file variable
+b.    reserved word -> special word for Perl Program not for varaible naming
+c.    file mode -> read, write, append
+d.    append mode -> not creating new file, write file by adding to existing file
+e.    pipe -> connection of one program output to another program input
+From where does the <> operator read its data? -> command line files
+What do the following file-test operators do?
+a.  -r -> permission to read
+b.  -x -> file existence
+c.  -s -> file size
+What are the contents of the array @ARGV when the following Perl program is executed?
+$ myprog file1 file2 file3 ->('file1', 'file2', 'file3')
+How do you indicate that a file is to be opened:
+a.    In write mode? open(FILEVAR, ">filename")
+b.    In append mode? open(FILEVAR, ">>filename")
+c.    In read mode? open(FILEVAR, "filename")
+d.    As a pipe? open(PIPEVAR, "| xxx")
+What is the relationship between @ARGV and the <> operator? -> <> read from ARGV

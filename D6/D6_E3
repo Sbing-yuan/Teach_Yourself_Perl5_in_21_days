@@ -1,0 +1,20 @@
+#!/usr/local/bin/perl
+
+open (INFILE1, "file1") || die ("Cannot open input file file1\n");
+open (OUTFILE, ">file2")|| die ("Cannot open output file file2\n");
+
+$inline = <INFILE1>;
+while($inline ne "") {
+	print OUTFILE ($inline);
+	$inline = <INFILE1>;
+}
+close(INFILE1);
+
+open (INFILE1, "file1") || die ("Cannot open input file file1\n");
+
+$inline = <INFILE1>;
+while($inline ne "") {
+	print OUTFILE ($inline);
+	$inline = <INFILE1>;
+}
+close(INFILE1);

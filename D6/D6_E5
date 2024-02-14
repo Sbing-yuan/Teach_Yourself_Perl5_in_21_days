@@ -1,0 +1,26 @@
+#!/usr/local/bin/perl
+
+$filecount = 1;
+$totalwordcount = 0;
+while ($filecount <= @ARGV) {
+	$file = $ARGV[$filecount-1];
+	if(-r $file) {
+		print("$file is readable\n")	
+	}
+	else {
+		print("$file is not readable\n")
+	}
+	if(-w $file) {
+		print("$file is write-able\n")	
+	}
+	else {
+		print("$file is not write-able\n")
+	}
+	if(-e $file) {
+		print("$file is excute-able\n")	
+	}
+	else {
+		print("$file is not excute-able\n")
+	}
+	$filecount++;
+}
