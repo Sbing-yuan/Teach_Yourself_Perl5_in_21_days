@@ -1,0 +1,13 @@
+#!/usr/local/bin/perl
+
+unless (open(MYFILE, "file1")) {
+        die ("cannot open input file file1\n");
+}
+
+# if the program gets this far, the file was
+# opened successfully
+$line = <MYFILE>;
+while ($line ne "") {
+        print ($line);
+        $line = <MYFILE>;
+}

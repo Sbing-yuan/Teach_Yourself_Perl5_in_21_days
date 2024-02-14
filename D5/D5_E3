@@ -1,0 +1,18 @@
+#!/usr/local/bin/perl
+
+$line = <STDIN>;
+while ($line ne "") {
+        chop ($line);
+        @array = split(/ /, $line);
+        @total_array = (@total_array, @array);
+        $line = <STDIN>;
+}
+
+@total_array = reverse(sort(@total_array));
+$var = 0;
+while ($var < @total_array) {
+	if($total_array[$var] ne $total_array[$var - 1]) {
+		print("$total_array[$var]\n");	
+	}
+	$var += 1;
+}

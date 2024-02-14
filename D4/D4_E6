@@ -1,0 +1,10 @@
+#!/usr/local/bin/perl
+#Determine the order of operations in the following statement, and add parentheses to the statement to indicate this order:
+#$result = $var1 * 2 << 5 + 3 || $var2 ** 3, $var3;
+$var1 = 11;
+$var2 = 22;
+$var3 = 33;
+$result = $var1 * 2 << 5 + 3 || $var2 ** 3, $var3;
+print("result is $result\n");
+$result = ((($var1 * 2) << (5 + 3)) || ($var2 ** 3)), $var3;
+print("result is $result\n");

@@ -1,0 +1,14 @@
+#What is wrong with the following program? (See if you can figure out what's wrong without checking the listings in today's lesson.)
+#!/usr/local/bin/perl
+
+@input = <STDIN>;
+chop(@input);
+#$currline = 1;
+$currline = 0;
+while ($currline < @input) {
+@words = split(/ /, $input[$currline]);
+@words = sort(@words);
+$input[$currline] = join(" ", @words);
+$currline++;
+}
+print (@input);

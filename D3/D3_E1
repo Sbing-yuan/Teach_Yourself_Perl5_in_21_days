@@ -1,0 +1,7 @@
+#!/usr/local/bin/perl
+
+$var = 0.1;
+while ($var < 0.9) {
+	print("$var\n");
+	$var = $var + 0.1;
+}

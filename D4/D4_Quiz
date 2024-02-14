@@ -1,0 +1,35 @@
+Define the following terms:
+a.    operator -> tokens that perform operations 
+b.    operand -> value that are input to operator
+c.    expression -> collection of operations(operators and operands)
+d.    precedence -> different operators execute priority 
+e.    associativity -> same operator execute priority left2right or right2left
+What operations are performed by the following operators?
+a.   && -> logical and
+b.   & -> bitwise and
+c.   ^ -> bitwise xor
+d.   ne -> string logical opearation not equal
+e.   . -> string concatanate
+What operators perform the following operations?
+a.    string-equality comparison -> eq
+b.    remainder -> %
+c.    string duplication -> x
+d.    bitwise OR -> |
+e.    numeric greater-than-or-equal-to >=
+What is the binary representation of the following numbers?
+a.   171 -> 0000_0000_1010_1011
+b.   1105 -> 0000_0100_0101_0001
+c.   0 -> 0000_0000_0000_0000
+What is the standard (base-10) representation of the following numbers?
+a.   01100100 -> 100
+b.   00001111 -> 15
+c.   01000001 -> 65
+What is the value of the following expressions?
+a.   17 * 2 ** 3 / 9 % 2 << 2 ->  
+17 * 8 / 9 % 2 << 2 -> 
+136 / 9 % 2 << 2 ->
+15 % 2 << 2 ->
+1 << 2 -> 4
+b.   0 && (171567 * 98275 / 1174.5 ** 4) -> 0
+c.   1171 ^ 904 -> 0100_1001_0011 ^ 0011_1000_1000 = 0111_0001_1011 = 1819
+d.   "abc" . "de" x 2 -> abcdede

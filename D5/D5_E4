@@ -1,0 +1,4 @@
+#!/usr/local/bin/perl
+#What is wrong with the following statement?
+#$result = @array[4];
+$result = $array[4];

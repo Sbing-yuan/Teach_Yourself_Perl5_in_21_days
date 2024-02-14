@@ -1,0 +1,19 @@
+#!/usr/local/bin/perl
+
+$filecount = 1;
+$totalwordcount = 0;
+while ($filecount <= @ARGV) {
+        unless (open (INFILE, $ARGV[$filecount-1])) {
+               die ("Can't open input file $ARGV[$filecount-1]\n");
+        }
+        while ($line = <INFILE>) {
+                @words = split(/ /, $line);
+		$totalwordcount += @words;
+        }
+        $filecount++;
+}
+print ("total words: $totalwordcount\n");
+
+open (MESSAGE, "| mail dave") || die ("Can't mail to userid dave.\n");
+print MESSAGE ("Total number of words: $totalwordcount\n");
+close (MESSAGE);

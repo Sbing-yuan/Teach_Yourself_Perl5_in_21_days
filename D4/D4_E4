@@ -1,0 +1,9 @@
+#!/usr/local/bin/perl
+print("Input var1: \n");
+$var1 = <STDIN>;
+print("Input var2: \n");
+$var2 = <STDIN>;
+$quo = $var1 / $var2;
+$rem = $var1 % $var2;
+print("quotient: $quo\n");
+print("remainder $rem\n");

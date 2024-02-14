@@ -1,0 +1,17 @@
+#!/usr/local/bin/perl
+
+$the_count = 0;
+$line = <STDIN>;
+while ($line ne "") {
+        chop ($line);
+        @array = split(/ /, $line);
+	$var = 1;
+	while ($var <= @array) {
+		if($array[$var-1]  eq 'the') {
+			$the_count += 1;	
+		}
+		$var += 1;
+	}
+        $line = <STDIN>;
+}
+print ("Total number of the $the_count\n");

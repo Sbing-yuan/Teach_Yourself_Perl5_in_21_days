@@ -1,0 +1,38 @@
+Define the following terms:
+a.   list -> ordered number of scalar
+b.   empty list -> zero element list
+c.   array variable -> variable that store array,list 
+d.   subscript -> index for accessing elements in array
+e.   array slice -> subset of array
+Assume the following assignments have been performed:
+@list = (1, 2, 3);
+$scalar1 = "hello";
+$scalar2 = "there";
+What is assigned to the array variable @newlist in each of the following cases?
+a.   @newlist = @list; -> (1, 2, 3)
+b.   @newlist = reverse(@list[1,2]); -> (3, 2)
+c.   @newlist = ($scalar1, @list[1,1]); -> ("hello", 2, 2)
+d.   ($dummy, @newlist) = @list; -> (2, 3)
+e.   @newlist[2,1,3] = @list[1,2,1]; -> {"", 3, 2, 2}
+f.   @newlist = <STDIN>; -> <STDIN>, one line per element
+Assume that the following assignments have been performed:
+@list1 = (1, 2, 3, 4);
+@list2 = ("one", "two", "three");
+What is the value of $result in each of the following cases?
+($dummy, $result) = @list1; -> 2
+$result = @list1; -> 4
+($result) = @list2; -> "one"
+($result) = @list1[1..2]; -> 2
+$result = $list2[$list1[$list1[0]]]; -> "three"
+$result = $list2[3]; -> ""
+What is the difference between a list and an array variable? -> array variable stores list which is a collection of scalar var
+How does the Perl interpreter distinguish between an array element and a scalar variable? 
+->  array element: $var[x], scalar var: $var
+How can you ensure that the @, $, and [ characters are not substituted for in strings?
+-> 'single quote', escape \
+How can you obtain the length of a list stored in an array variable?
+-> $length = @arr;
+What happens when you refer to an array element that has not yet been defined?
+-> ""
+What happens when you assign to an array element that is larger than the current length of the array?
+-> new element

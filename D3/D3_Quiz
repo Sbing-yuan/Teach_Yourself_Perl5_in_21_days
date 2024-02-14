@@ -1,0 +1,26 @@
+Define the following terms:
+a    round-off error ->  floating point number precision errors
+b    octal notation -> x * 8^n
+c    precision -> number of correct digits of stored variable
+d    scientific notation -> one digit + significant digits + exponent
+Convert the following numbers from octal notation to decimal:
+a    0377 -> 255
+b    06 -> 6
+c    01131 -> 601
+Convert the following numbers from hexadecimal notation to decimal notation:
+a    0xff -> 255
+b    0x11 -> 17
+c    0xbead -> 48813
+What does the following line print?
+print ("I am bored\b\b\b\b\bhappy!\n"); 
+-> I am happy!
+
+Suppose the value of $num is 21. What string is assigned to $text in each of the following cases?
+a    $text = "This string contains $num."; -> This string contains 21.
+b    $text = "\\$num is my favorite number."; -> \21 is my favorite number.
+c    $text = 'Assign \$num to this string.'; -> Assign \$num to this string.
+Convert the following numbers to scientific notation:
+a    43.71 -> 4.371e01
+b    0.000006e-02 -> 6e-08
+c    3 -> 3e00
+d    -1.04 -> -1.04e00

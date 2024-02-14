@@ -1,0 +1,25 @@
+#!/usr/local/bin/perl
+
+#$num = <STDIN>;
+#chop ($num);
+#$x = "";
+#$x += "hello";
+#if ($x != "goodbye" | $x == "farewell") {
+#$result = $num eq 0 ? 43;
+#} else {
+#$result = ++$num++;
+#}
+#print("the result is $result\n");
+
+$num = <STDIN>;
+chop ($num);
+$x = "";
+$x .= "hello";
+if ($x ne "goodbye" || $x eq "farewell") {
+	$result = $num == 0 ? 43 : 0;
+} 
+else {
+$result = ++$num; # can't have ++ on both sides
+}
+print("the result is $result\n");
+

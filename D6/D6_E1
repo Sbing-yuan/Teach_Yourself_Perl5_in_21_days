@@ -1,0 +1,10 @@
+#!/usr/local/bin/perl
+
+$sum = 0;
+$var = 0;
+while ($var <= @ARGV-1) {
+	$sum += $ARGV[$var];
+	$var++;
+}
+
+print("Sum: $sum\n");
