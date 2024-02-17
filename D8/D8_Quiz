@@ -1,0 +1,59 @@
+How many times does the following loop iterate?
+for ($count = 0; $count < 7; $count++) {
+print ("$count\n");
+}
+->
+0
+1
+2
+3
+4
+5
+6
+
+How many times does the following loop iterate?
+$count = 1;
+do {
+print ("$count\n");
+} until ($count++ > 10);
+->
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+
+How many times does the following loop iterate?
+for ($count = 1; $count <= 10; $count++) {
+last if ($count == 5);
+}
+-> 5 times
+
+How many times does the following loop iterate?
+$restart = 0;
+for ($count = 1; $count <= 5; $count++) {
+redo if ($restart++ == 1);
+}
+-> 6 times
+
+Write a single-line conditional statement that quits a loop if $x equals done.
+-> last if($x eq "done");
+
+Write a single-line conditional statement that restarts a loop if the first element of the list @list is 26.
+-> redo if($list[0] == 26);
+
+Write a single-line conditional statement that goes to the next iteration of the loop labeled LABEL if $scalar equals #.
+-> next LABEL if ($scalar eq "#")
+
+Write a single-line conditional statement that prints the digits from 1 to 10. (Use a scalar variable, and assume that it has not been previously defined.)
+What does the continue statement do?
+-> print($var) while (++$var <= 10)
+
+What does the continue statement do?
+-> define a statement block to be executed with while or until
