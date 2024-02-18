@@ -1,0 +1,40 @@
+Define the following terms:
+a.    subroutine -> reusable chunk of codes
+b.    invocation -> activation of subroutine
+c.    argument -> subroutine input variable
+d.    single-exit module -> final statement in subroutine as returend value
+e.    aliasing -> one name is equivalent to another
+Consider the following program:
+#!/usr/local/bin/perl
+
+$total = 0;
+@list = (1, 2, 3);
+@list2 = &my_sub;
+sub my_sub {
+local ($total);
+$total = 1;
+@list = (4, 5, 6);
+}
+What are the values stored in the following variables at the end of this program?
+a.    $total -> 0
+b.    @list -> (4, 5, 6)
+c.    @list2 -> (4, 5, 6)
+What does the following subroutine return?
+sub sub1 {
+$count = $sum = 0;
+while ($count <= 10) {
+$sum += $count;
+$count++;
+}
+}
+-> 0, last expression 11 <= 10
+What is the value of @list at the end of the following program?
+#!/usr/local/bin/perl
+
+@list = (1, 2, 3);
+&testsub(*list);
+sub testsub {
+local (*sublist) = @_;
+$sublist[1] = 5;
+}
+-> (1, 5, 3)
