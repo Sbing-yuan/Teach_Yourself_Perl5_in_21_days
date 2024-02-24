@@ -1,0 +1,20 @@
+Define the following terms:
+associative array -> array with any scalar as subscript
+pointer -> associative array value is another associative key
+linked list -> key1 => value1(key2) => value2(key3) ... => valuen => null
+binary tree -> data structure that each element point to 2 another element
+node -> binary tree element
+child -> binary element that are pointed
+
+What are the elements of the associative array created by the following assignment?
+%list = ("17.2", "hello", "there", "46", "e+6", "88"); -> ("17.2" => "hello", "there" => "46", "e+6", "88")
+
+What happens when you assign an associative array to an ordinary array variable? -> (keyn, valuen, ...) key-value pair in random order
+
+How can you create a linked list using an associative array? => $list_first = "first_elem" %list = ("first_elem" => "sec_elem", ...)
+
+How many times does the following loop iterate?
+%list = ("first", "1", "second", "2", "third", "3");
+foreach $word (keys(%list)) {
+last if ($word == "second");
+} => range from 1 ~ 3, depends on %list order
