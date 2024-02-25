@@ -1,0 +1,26 @@
+Define value fields that print the following:
+a.    Ten left-justified characters -> @<<<<<<<<<
+b.    Five right-justified characters -> @>>>>
+c.    Two centered characters -> @|
+d.    A floating-point number with five digits before the decimal point and three after it -> @####.###
+e.    A field that prints as many formatted lines of 30 left-justified characters as necessary -> ~~^<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+What do these fields print?
+a.    @<<<< -> left-justified 5 chars
+b.    @|||||| -> centered 7 chars
+c.    @ -> single char
+d.    @* -> multline
+e.    ~ ^>>>>>>>>> -> right-justified 10 char as many as possible
+
+What do these printf field specifiers print?
+a.    %5d -> right justified 5 decimals
+b.    %11.4f -> 11 digit all 4 after decimal points
+c.    %010d -> right justified 10 decimals with leading 0
+d.    %-12s -> left justified 12 chars
+e.    %x -> hexadecimal
+
+Why do certain floating-point numbers have round-off problems?
+-> not exactly stored, only closet equivalent
+
+How do you create a page header for an output file?
+-> $^ = "TOP_FORMAT"
