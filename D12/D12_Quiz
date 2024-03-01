@@ -1,0 +1,18 @@
+What do these functions do?
+a.    tell -> check how many bytes are read
+b.    mkdir -> create new directory
+c.    link -> create hardlink of file
+d.    unlink -> remove hardlink of file
+e.    truncate -> reduce the size of files
+What is the difference between stat and lstat? -> lstat for symbolic link
+What is the difference between tell and telldir? -> tell for file variable, telldir for diretory variable
+How are the following files being opened?
+A.    open (MYFILE, "<file1"); -> read only
+b.    open (MYFILE, "file2|"); -> read only
+c.    open (MYFILE, "+>file3"); -> read and write
+d.     open (MYFILE, ">&STDOUT"); -> treat MYFILE as STDOUT
+What permissions are granted by the following values?
+a.    0666 -> file owner, group, others r/w
+b.    0777 -> file owner, group, others r/w/x
+c.    0700 -> file owner r/w/x
+d.    0644 -> file owner r/w, group, others r
