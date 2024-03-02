@@ -1,0 +1,44 @@
+What do these functions do?
+a.    srand -> random generator, input argument is seed
+b.    pipe -> process output as another process input
+c.    atan2 -> two input arguments, arctange(val1/val2)
+d.    sleep -> suspend program x s
+e.    gmtime -> return greenwich mean time
+
+Explain the differences between fork, system, and exec.
+fork -> create child process
+system -> create other program start
+exec -> terminate old one before new start
+
+Explain the differences between wait and waitpid.
+wait -> wait any child process end
+waidpid -> wait particular child process end
+
+How can you obtain the value of p?
+atan2(1,1)*4
+
+How can you obtain the value of the mathematical constant e?
+exp(1)
+
+What sprintf specifiers produce the following?
+a.    A hexadecimal number -> %h
+b.    An octal number -> %o
+c.    A floating-point number in exponential format -> %e
+d.    A floating-point number in standard (fixed) format -> %f
+
+If the scalar variable $string contains abcdefgh, what do the following calls return?
+a     substr ($string, 0, 3); -> "abc"
+b.    substr ($string, 4); -> "efgh"
+c.    substr ($string, -2, 2); -> "gh"
+d.    substr ($string, 2, 0); -> ""
+
+Assume $string contains the value abcdabcd. What value is returned by each of the following calls?
+a.    index ($string, "bc"); -> 1
+b.    index ($string, "bcde"); -> -1
+c.    index ($string, "bc", 1); -> 1
+d.    index ($string, "cd", 3); -> 6
+e.    rindex ($string, "bc"); -> 5
+
+Assume $string contains the value abcdabcd\n (the last character being a trailing newline character). What is returned in $retval by the following?
+a.    $_ = $string; $retval = tr/ab/ab/; -> 4
+b.    $retval = length ($string); -> 9
