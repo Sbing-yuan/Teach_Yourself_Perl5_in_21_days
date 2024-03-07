@@ -1,0 +1,57 @@
+What format does each of the following pack-format characters specify?
+a.    a -> ASCII string + null
+b.    A -> ASCII string + space
+c.    d -> double-precison floating-point number
+d.    p -> pointer to a string
+e.    @ -> nulls
+
+What do these unpack-format specifiers do?
+a.    "a" -> one ASCII character
+b.    "@4A10i*" -> skip four bytes, 10 ASCII character, rest integers
+c.    "@*X4C*" -> skip to end, back-up four bytes, rest unsigned character
+d.    "ix4iX8i" -> one integer, skip four bytes, one integer, backward eight bytes, one integer
+e.    "b*X*B*" -> string f bits till end lowest first, backward till start, string of bits till end highest first
+
+What value is stored in $value by the following?
+a.    The statements
+$vector = pack ("b*", "10110110");
+$value = vec ($vector, 3, 1); -> 011'0'1101 -> 1 -> 1
+b.    The statements
+$vector = pack ("b*", "10110110");
+$value = vec ($vector, 1, 2); -> 0'11'01101 -> 11 -> 3
+
+What's the difference between defined and undef?
+defined -> check wether a variable is defined before.
+undef -> undefine variable, release memory
+
+Assume @list contains ("1", "2", "3", "4", "5"). What are the contents of @list after the following statement?
+a.    splice (@list, 0, 1, "new"); -> ("new", "2", "3", "4", "5")
+b.    splice (@list, 2, 0, "test1", "test2"); -> ("1", "2", "test1", "test2", "3", "4", "5")
+c.    splice (@list, -1, 1, "test1", "test2"); -> ("1", "2", "3", "4", "test1", "test2")
+d.    splice (@list, 2, 1); -> ("1", "2", "4", "5")
+e.    splice (@list, 3); -> ("1", "2", "3")
+
+What do the following statements return?
+a.    grep (!/^!/, @array); -> return not start with !
+b.    grep (/\b\d+\b/, @array); -> return pure digits
+c.    grep (/./, @array); -> return non-empty
+d.    grep (//, @array); -> return everything
+
+What is the difference between shift and unshift?
+shift: <- o o o ... o
+unshift: -> o o o ... o
+
+What arguments to splice are equivalent to the following function calls?
+a.    shift (@array); -> splice(@array, 0, 1)
+b.    pop (@array); -> splice(@array, -1, 1)
+c.    push (@array, @sublist); -> splice(@array, -1, 0, @sublist)
+d.    unshift (@array, @sublist); -> splice(@array, 0, 0, @sublist)
+
+How can you create a stack using shift, pop, push, or unshift?
+save into statk: push
+read from stack: pop
+
+How can you create a queue using shift, pop, push, or unshift?
+save into queue: unshift
+read from queue: shift
+
