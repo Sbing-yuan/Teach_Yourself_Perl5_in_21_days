@@ -4,6 +4,6 @@ every Quiz are answered
 
 every excamples are executed
 
-every Exercises are executed
+every Exercises are answerd and executed
 
-http://wwwacs.gantep.edu.tr/docs/perl-ebook/?fbclid=IwAR06ZsI1e1PW9oCbyA5VIBtxN68lGxY5KQCaCNmgraFSJzV7wqk7emAplzU#Introduction
+https://www.davetill.com/perlbook/
