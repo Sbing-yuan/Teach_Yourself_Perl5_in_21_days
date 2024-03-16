@@ -1,0 +1,27 @@
+Which functions manipulate the following files?
+a.    /etc/passwd -> endpwent, getpwent, getpwuid, setpwent
+b.    /etc/hosts -> endhostent, gethostbyaddr, gethostbyname, gethostent, sethostent
+c.    /etc/networks -> endnetent, getnetbyaddr, getnetbyname, getnetent, setnetent
+d.    /etc/services -> endservent, getservbyport, getservent, setservent
+
+Which of the following functions are called by client processes and which by server processes when performing socket operations? In what order should these functions be called?
+a.    Bind
+b.    listen
+c.    socket
+d.    accept
+e.    connect
+server -> c, a, b, d
+client -> c, a, e
+
+What do the following functions do?
+a.    getpwuid -> searches for specific user ID in /etc/passwd
+b.    setprotoent -> rewinds the /etc/protocols
+c.    gethostbyaddr -> searches the /etc/hosts for a particular network address
+d.    getgrent -> retrieves next entry from /etc/group
+e.    getservbyport -> serach /etc/services for a particular port number
+
+How do you send information using a socket?
+-> specify file variable associated with the socket, then print, printf
+
+Describe how to list all the (numeric) user IDs on your machine.
+(username, $password, $userid) = getpwent();
