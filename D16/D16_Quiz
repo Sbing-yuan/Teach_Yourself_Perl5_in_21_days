@@ -1,0 +1,21 @@
+What do the following options do?
+a.    -0 -> specify ASCII char in octal to replace newline
+b.    -s -> specify own option
+c.    -w -> warning
+d.    -x -> extract perl syntax inside a text
+e.    -n -> operate on each line in files specified
+
+What happens when -l and -0 are both specified, and
+a.    -l appears first?
+b.    -0 appears first?
+-> -l appears first
+
+Why do the -i and -n options destroy input files when included together?
+-> edit in place
+
+How does the C preprocessor distinguish between preprocessor commands and Perl comments?
+-> it can't
+
+How does the Perl interpreter distinguish options for the interpreter from options for the program itself?
+-> before program name: interpreter options
+-> after program name: program options

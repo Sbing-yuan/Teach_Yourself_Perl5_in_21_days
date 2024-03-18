@@ -1,0 +1,1 @@
+perl -i -p -e "tr/a-z/A-Z/;" 

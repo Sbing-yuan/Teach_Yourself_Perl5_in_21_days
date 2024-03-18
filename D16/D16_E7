@@ -1,0 +1,4 @@
+BUG BUSTER: What is wrong with this command line?
+$ perl -ipe "s/abc/def/g";
+
+perl -i -pe "s/abc/def/g;"

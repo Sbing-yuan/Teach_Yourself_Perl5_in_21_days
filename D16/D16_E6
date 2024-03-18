@@ -1,0 +1,7 @@
+BUG BUSTER: What is wrong with this command line?
+$ perl -i -n -e "s/abc/def/g";
+-> wipe out old files
+
+$ perl -i -p -e "s/abc/def/g";
+-> update abc to def 
+
