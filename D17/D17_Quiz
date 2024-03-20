@@ -1,0 +1,22 @@
+List the functions and operators that use $_ by default.
+-> // ,s// ,tr//, <>, chop, print, study
+
+What do the following variables contain?
+a.    $= -> page length
+b.    $/ -> input line seprator, determin how STDIN consider a line
+c.    $? -> system error code
+d.    $! -> system error message
+d.    @_ -> subroutine input arguments list
+
+Explain the differences between ARGV, $ARGV, and @ARGV.
+ARGV ->  file variable associated with current input file
+$ARGV -> name of current file being read
+@ARGV -> list of input arguments
+
+Explain the difference between @INC and %INC.
+@INC -> list of directory to serach for require files
+%INC -> key: require file, value: require file directory
+
+Explain the difference between $0 and $1.
+$0 -> program name
+$1 -> first matched ()pattern
