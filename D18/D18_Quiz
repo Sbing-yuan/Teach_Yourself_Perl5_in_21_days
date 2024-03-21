@@ -1,0 +1,29 @@
+1. Given that $pointer is a pointer to a hash, what's wrong with the following line of code?
+$x= ${$pointer->{$i}};
+-> $x = $pointer->{$i}
+
+2. Why is $b not being set in the following line of code? What do you have to do to make it okay?
+sub xxx {
+my ($a, $b) = @_;
+}
+-> only one input argument
+
+3. What's the difference between these two lines of code?
+printf "$i : $$pointer[$i++]; ";
+printf " and $i : $pointer->[$i++]; \n";
+-> the same, access de-refrecnce result
+
+4. What do the following lines of code print out?
+$HelpHelpHelp = \\\"Help";
+print $$$$HelpHelpHelp;
+-> "Help"
+
+5. What's the use of the ${variable} construct? How could the following three
+lines of code be rewritten?
+$name = ${$scalarref};
+draw(@{$coordinates}, $display);
+${$months}[0] = "March";
+-> create symbolic reference
+-> $name = $scalarref;
+-> draw($coordinates, $display);
+-> $months[0] = "March";
