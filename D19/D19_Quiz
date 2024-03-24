@@ -1,0 +1,21 @@
+1. Show at least three ways to create a new object of a given class, Balloon.
+-> Balloon->new()
+-> Balloon::new()
+-> new Balloon
+
+2. What's wrong the following lines of code?
+{
+my $x; my $y;
+$x = \$y;
+}
+-> memory of $y will hang till program exit
+
+3. What are the three most important rules about OOP in Perl?
+-> class: package
+-> object: reference
+-> method: subroutine
+
+4. How do you override a call to a method to use the base class instead of the subclass? 
+-> explicitly invoke: BaseClassName::method()
+
+
