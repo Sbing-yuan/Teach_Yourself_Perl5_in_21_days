@@ -1,0 +1,18 @@
+1. What do these constants contain?
+a. __LINE__ -> current line
+b. __FILE__ -> filename
+c. __END__ -> EOF
+
+2. What is the value of each of the following strings? (Assume that $var has the value hello.)
+a. q(It's time to say $var) -> It's time to say $var
+b. qq "It's time to say $var"; # a comment -> It's time to say hello
+c. qx/echo $var/ -> hello
+
+3. What is stored in @array after the following statements have been executed?
+@array = ("one", "two", "three", "four");
+$#array = 2;
+$array[4] = "five";
+-> ("one", "two", "three", "", "five")
+
+4. How can you include code from another file in your program? 
+-> require
