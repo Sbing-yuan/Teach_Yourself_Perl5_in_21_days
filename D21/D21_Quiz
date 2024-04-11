@@ -1,0 +1,26 @@
+1. Define the following terms:
+	1. trace mode  -> display every statement 
+	2. stack trace -> subroutine stack display which subroutine in and who calls it from top to down
+	3. breakpoint  -> debugger will stop before breakpoint
+	4. line action -> set action when hit particular line
+
+2. Explain the differences between the X and V commands.
+-> X display variable in current package
+-> V display variable in all packages
+
+3. Explain the differences between the // and ?? commands.
+-> // search pattern forward
+-> ?? serach pattern backward
+
+4. Explain the differences between the < and > commands.
+
+5. Explain the differences between the s and n commands.
+-> step 
+-> step bypass whole subroutine,
+
+6. What do the following commands do?
+	1. l -> ls a window of line left from previous ls
+	2. l 26 -> ls line26
+	3. l 5-7 -> ls line5~7
+	4. l 5+7 -> ls line5~12
+	5. w -> ls window of lines around current line
